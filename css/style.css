@@ -1,0 +1,77 @@
+h1, h2 {
+  font-size: 60px;
+  text-align: center;
+  font-family: arial;
+  margin: 10px;  
+}
+
+h1 {
+  text-shadow: 2px 2px #00aaff;
+}
+
+
+button {
+  display: block;
+  margin: auto;
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 12px 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: large;
+  border-radius: 12px;
+  position: absolute;
+  left: 781px;
+  top: 700px;
+  transition: box-shadow 0.3s ease;
+}
+
+button:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.container {
+  width: 600px;
+  margin: auto;
+  cursor: url(../img/palu1.png), auto;
+}
+
+.container:active {
+  cursor: url(../img/palu2.png), auto;
+}
+
+.awan {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+
+.awan::after {
+  content: '';
+  display: block;
+  width: 200px;
+  height: 100px;
+  background: url(../img/awan.png) bottom center no-repeat;
+  background-size: 100%;
+  position: absolute;
+  bottom: -15px;
+  
+}
+
+.gagak {
+  width: 100%;
+  height: 100%;
+  background: url(../img/burung.png) bottom center no-repeat;
+  background-size: 50%;
+  position: absolute;
+  top: 100px;
+  transition: top 0.3s;
+}
+
+.awan.muncul .gagak {
+  top: -15px;
+}
